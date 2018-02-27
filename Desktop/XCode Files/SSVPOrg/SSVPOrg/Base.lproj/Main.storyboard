@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SSVPOrg" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pfC-Ah-XoK">
+                                <rect key="frame" x="0.0" y="38" width="375" height="629"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pfC-Ah-XoK" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="DlD-1K-uih"/>
+                            <constraint firstItem="pfC-Ah-XoK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="FLV-MZ-RgC"/>
+                            <constraint firstItem="pfC-Ah-XoK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OIp-h4-aJj"/>
+                            <constraint firstItem="pfC-Ah-XoK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="y6a-9h-CS9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="pfC-Ah-XoK" id="D2B-ZW-lno"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Signin View Controller-->
+        <scene sceneID="iME-Di-Qem">
+            <objects>
+                <viewController storyboardIdentifier="SigninViewController" id="Z7B-xO-4aL" customClass="SigninViewController" customModule="SSVPOrg" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y08-yT-Sz8"/>
+                        <viewControllerLayoutGuide type="bottom" id="FMz-pf-fmg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nDv-Ea-hZl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginRectangle" translatesAutoresizingMaskIntoConstraints="NO" id="4o1-jM-qPM">
+                                <rect key="frame" x="16" y="258.5" width="343" height="183"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="CmM-K9-qMd"/>
+                                    <constraint firstAttribute="height" constant="183" id="q7g-Hx-CCh"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="P A S S W O R D" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jNf-pc-cNE">
+                                <rect key="frame" x="38.5" y="350.5" width="284.5" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="0wE-ah-X4n"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKM-cf-Izh">
+                                <rect key="frame" x="129.5" y="451.5" width="116" height="27"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="116" id="BP8-o1-i5q"/>
+                                    <constraint firstAttribute="height" constant="27" id="GTc-lC-3yR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="15"/>
+                                <state key="normal" title="Log in">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="LoginButton:" destination="Z7B-xO-4aL" eventType="touchUpInside" id="3tK-aX-UmP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsE-RM-LKk">
+                                <rect key="frame" x="37" y="50" width="189" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="WQd-jb-xER"/>
+                                    <constraint firstAttribute="width" constant="189" id="f3Z-NR-LfB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="U S E R N A M E" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qwJ-vo-Wjc">
+                                <rect key="frame" x="38.5" y="289.5" width="284.5" height="60"/>
+                                <rect key="contentStretch" x="0.20000000000000001" y="0.0" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="tl1-tH-e3Y"/>
+                                </constraints>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ECE-iB-zPn">
+                                <rect key="frame" x="86" y="497" width="202" height="30"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                                <state key="normal" title="Don’t have an account? ">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qwJ-vo-Wjc" firstAttribute="leading" secondItem="4o1-jM-qPM" secondAttribute="leading" multiplier="2.4" id="1UR-xe-Zj4"/>
+                            <constraint firstItem="qwJ-vo-Wjc" firstAttribute="top" secondItem="4o1-jM-qPM" secondAttribute="top" multiplier="1.12" id="DKs-ab-Ga5"/>
+                            <constraint firstItem="4o1-jM-qPM" firstAttribute="top" secondItem="xsE-RM-LKk" secondAttribute="bottom" multiplier="2.1" id="EsB-uh-VyD"/>
+                            <constraint firstItem="qwJ-vo-Wjc" firstAttribute="trailing" secondItem="4o1-jM-qPM" secondAttribute="trailing" multiplier="0.9" id="MUd-2k-P3G"/>
+                            <constraint firstItem="ECE-iB-zPn" firstAttribute="top" secondItem="WKM-cf-Izh" secondAttribute="bottom" constant="18.5" id="MUi-Yp-puc"/>
+                            <constraint firstItem="Dja-mn-xd8" firstAttribute="trailing" secondItem="4o1-jM-qPM" secondAttribute="trailing" constant="16" id="VJq-8c-b26"/>
+                            <constraint firstItem="jNf-pc-cNE" firstAttribute="trailing" secondItem="4o1-jM-qPM" secondAttribute="trailing" multiplier="0.9" id="Wv0-ov-Chj"/>
+                            <constraint firstItem="ECE-iB-zPn" firstAttribute="centerX" secondItem="nDv-Ea-hZl" secondAttribute="centerXWithinMargins" id="YHc-nk-19q"/>
+                            <constraint firstItem="jNf-pc-cNE" firstAttribute="leading" secondItem="4o1-jM-qPM" secondAttribute="leading" multiplier="2.4" id="ZeO-Cq-mZP"/>
+                            <constraint firstItem="4o1-jM-qPM" firstAttribute="leading" secondItem="Dja-mn-xd8" secondAttribute="leading" constant="16" id="bLS-If-k0n"/>
+                            <constraint firstItem="xsE-RM-LKk" firstAttribute="top" secondItem="nDv-Ea-hZl" secondAttribute="topMargin" constant="30" id="e5B-Dz-MzA"/>
+                            <constraint firstItem="jNf-pc-cNE" firstAttribute="bottom" secondItem="4o1-jM-qPM" secondAttribute="bottom" multiplier="0.93" id="oV3-gw-KTL"/>
+                            <constraint firstItem="WKM-cf-Izh" firstAttribute="top" secondItem="4o1-jM-qPM" secondAttribute="bottom" constant="10" id="pGY-v6-iZs"/>
+                            <constraint firstItem="xsE-RM-LKk" firstAttribute="leading" secondItem="nDv-Ea-hZl" secondAttribute="leadingMargin" constant="21" id="w5D-Qu-5Uc"/>
+                            <constraint firstItem="WKM-cf-Izh" firstAttribute="centerX" secondItem="nDv-Ea-hZl" secondAttribute="centerXWithinMargins" id="zXE-Gz-fPs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Dja-mn-xd8"/>
+                    </view>
+                    <connections>
+                        <outlet property="_login_button" destination="WKM-cf-Izh" id="8Gk-sp-H9v"/>
+                        <outlet property="_password" destination="jNf-pc-cNE" id="lxZ-rK-IlG"/>
+                        <outlet property="_username" destination="qwJ-vo-Wjc" id="Kah-pm-4cz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LZr-c0-CkA" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1007.2" y="-0.44977511244377816"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LoginRectangle" width="310" height="125"/>
+    </resources>
+</document>
